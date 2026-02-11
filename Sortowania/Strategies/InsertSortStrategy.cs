@@ -4,22 +4,28 @@ namespace Sortowania.Strategies
 {
     public class InsertSortStrategy<T> : ISortStrategy<T> where T : struct, IComparable<T>
     {
-        public T[] Sort(T[] arr)
+        public T[] Sort(T[] array)
         {
-            for (int i = 1; i < arr.Count(); i++)
+            if (array.Length < 2)
             {
-                T key = arr[i];
-                int j = i - 1;
-
-                while (j >= 0 && arr[j].CompareTo(key) > 0)
-                {
-                    arr[j + 1] = arr[j];
-                    j--;
-                }
-                arr[j + 1] = key;
+                // tablica za mała żeby był sens ją sortować
+                return array;
             }
 
-            return arr;
+            for (int i = 1; i < array.Length; i++)
+            {
+                T key = array[i];
+                int j = i - 1;
+
+                while (j >= 0 && array[j].CompareTo(key) > 0)
+                {
+                    array[j + 1] = array[j];
+                    j--;
+                }
+                array[j + 1] = key;
+            }
+
+            return array;
         }
     }
 }

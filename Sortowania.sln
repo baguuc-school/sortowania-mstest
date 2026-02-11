@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementy rozwiązania", "El
 		.gitignore = .gitignore
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortowanieTest", "SortowanieTest\SortowanieTest.csproj", "{DDD725A2-140B-4D57-89F9-F35AB618F07C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{69B6EF39-25ED-4E24-A724-29334D0AAD0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69B6EF39-25ED-4E24-A724-29334D0AAD0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69B6EF39-25ED-4E24-A724-29334D0AAD0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDD725A2-140B-4D57-89F9-F35AB618F07C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDD725A2-140B-4D57-89F9-F35AB618F07C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDD725A2-140B-4D57-89F9-F35AB618F07C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDD725A2-140B-4D57-89F9-F35AB618F07C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

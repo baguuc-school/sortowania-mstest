@@ -4,6 +4,12 @@
     {
         public T[] Sort(T[] array)
         {
+            if(array.Length < 2)
+            {
+                // tablica za mała żeby był sens ją sortować
+                return array;
+            }
+
             int n = array.Length;
 
             for (int i = 0; i < n - 1; i++)
