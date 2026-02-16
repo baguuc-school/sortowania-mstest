@@ -1,6 +1,8 @@
-﻿namespace Sortowania.Strategies
+﻿using Sortowania.Interface;
+
+namespace Sortowania.Strategies
 {
-    public class BubbleSortStrategy<T> : InsertSortStrategy<T> where T : struct, IComparable<T>
+    public class BubbleSortStrategy<T> : ISortStrategy<T> where T : struct, IComparable<T>
     {
         public T[] Sort(T[] array)
         {
